@@ -59,7 +59,7 @@ class Player extends Character {
 
   createStats() {
     return {
-      hp: 3,
+      hp: 3
     };
   }
 
@@ -215,7 +215,7 @@ class LocalPlayer extends Player {
       VD: 700,
       width: canvas.width,
       height: canvas.height,
-      position: this.position,
+      position: this.position
     });
     this.eventBuffer = this.createEventBuffer();
     this.respawn();
@@ -232,14 +232,14 @@ class LocalPlayer extends Player {
       jumped: this.eventBuffer.jumped,
       phi: this.phi,
       theta: this.theta,
-      shots: this.eventBuffer.shots,
+      shots: this.eventBuffer.shots
     };
   }
 
   createEventBuffer() {
     return {
       shots: 0,
-      jumped: false,
+      jumped: false
     };
   }
 

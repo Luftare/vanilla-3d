@@ -27,7 +27,7 @@ class Model {
   }
 
   resetNodes() {
-    this.nodes = [];
+    this.nodes = this.createNodes();
   }
 
   createNodes() {
@@ -91,7 +91,7 @@ class BulletModel extends Model {
         Math.sin((Math.PI * 2 * 1) / 3) * r,
         0
       ),
-      new V3(0, 0, 1),
+      new V3(0, 0, 1)
     ];
   }
 }
@@ -166,7 +166,7 @@ class PlayerModel extends Model {
       //gun
       new V3(0, 0, 0.7),
       new V3(0, 0, 0.6),
-      new V3(0.4, 0, 0.6),
+      new V3(0.4, 0, 0.6)
     ];
   }
 }
